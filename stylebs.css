@@ -1,0 +1,23 @@
+/* barra nav */
+.navbar {
+  padding: 2rem;
+  background-color: #eae0d5;
+}
+
+.navbar-collapse {
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-item {
+  align-items: center;
+  justify-content: space-between;
+  color: #5e503f;
+}
+
+/* Responsive */
+@media screen and (max-width: 767px) {
+  .navbar-brand {
+    display: none;
+  }
+}

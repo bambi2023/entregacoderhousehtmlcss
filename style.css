@@ -1,0 +1,35 @@
+/* div {
+        height: 250px;
+        background-color: blueviolet;
+        color: white;
+        font-size: 50px;
+        margin: 20px;
+      } */
+
+/*        div {
+        height: 250px;
+        background-color: blueviolet;
+        color: white;
+        font-size: 50px;
+        margin: 20px;
+      }  */
+
+.row {
+  background-color: rgb(116, 84, 204);
+  border: 10px solid rgb(163, 214, 24);
+  padding: 5px;
+  margin: 10px;
+  color: rgb(231, 55, 122);
+  font-size: 25px;
+  gap: 15px;
+}
+
+div.col-sm-4.col-lg-6 {
+  border: 10px solid orange;
+  padding: 5px;
+}
+
+div.col-sm-6.col-lg-6 {
+  border: 10px solid orange;
+  padding: 5px;
+}
