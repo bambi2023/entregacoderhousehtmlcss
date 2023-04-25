@@ -202,6 +202,9 @@ textarea {
   background-color: var(--colorwhite);
 }
 
+.text__shop {
+}
+
 /* Responsive */
 @media screen and (max-width: 767px) {
   .navbar-brand {
