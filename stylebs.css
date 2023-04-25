@@ -202,20 +202,6 @@ textarea {
   background-color: var(--colorwhite);
 }
 
-h5.card-title {
-  color: var(--colorwhite);
-}
-
-p.card-text {
-  color: var(--colorwhite);
-}
-
-p.main__text,
-p. .carousel-inner,
-h5 {
-  color: var(--colorblue);
-}
-
 /* Responsive */
 @media screen and (max-width: 767px) {
   .navbar-brand {
