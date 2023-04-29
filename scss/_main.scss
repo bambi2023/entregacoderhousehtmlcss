@@ -1,0 +1,37 @@
+main.responsive {
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+  min-height: 450px;
+  text-align: center;
+
+  .main__content {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: center;
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .main__text {
+    max-width: 80%;
+  }
+}
+
+.hero-principal {
+  align-items: center;
+  justify-content: center;
+
+  .hero-video {
+    margin-bottom: 2rem;
+    width: 426px;
+    height: 240px;
+  }
+
+  .galeria__nosotros,
+  h2 {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+}

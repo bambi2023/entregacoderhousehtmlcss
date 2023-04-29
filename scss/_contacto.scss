@@ -1,0 +1,23 @@
+/* FORMULARIO CONTACTO */
+$colorwhite: #eae0d5;
+$colorblue: #22333b;
+
+form {
+  .main__contact {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  label {
+    color: $colorwhite;
+  }
+  input,
+  select,
+  textarea {
+    color: $colorblue;
+    border-radius: 4px;
+    padding: 4px;
+    background-color: $colorwhite;
+  }
+}

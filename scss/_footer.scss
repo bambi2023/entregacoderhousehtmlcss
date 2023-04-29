@@ -1,0 +1,45 @@
+$colorwhite: #eae0d5;
+$colorbeige: #c6ac8f;
+$colorblue: #22333b;
+
+footer {
+  height: 110px;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background-color: $colorwhite;
+
+  h6 {
+    color: $colorblue;
+    font-size: 12px;
+  }
+
+  .iconos-buscanos {
+    margin-top: 1rem;
+  }
+
+  path:hover {
+    color: $colorbeige;
+    transition: all 0.1s ease-in;
+    font-size: 10px;
+  }
+
+  .iconos-redes-sociales svg {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1px;
+    margin: 10px;
+    border: 2px solid $colorblue;
+    border-radius: 50%;
+    transition: all 0.2s ease-in;
+    cursor: pointer;
+  }
+
+  .iconos-redes-sociales svg {
+    font-size: 10px;
+    transition: all 0.2s;
+    color: $colorblue;
+  }
+}

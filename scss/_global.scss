@@ -1,0 +1,64 @@
+* {
+  box-sizing: border-box;
+}
+
+$colorwhite: #eae0d5;
+$colorbeige: #c6ac8f;
+$colorgreen: #5e503f;
+$colorblue: #22333b;
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: $colorblue;
+  font-family: "Poppins", sans-serif;
+}
+
+h1 {
+  padding: 2rem;
+  font-size: 2.5rem;
+  color: $colorwhite;
+}
+h2,
+h3,
+h4,
+h5 {
+  color: $colorwhite;
+}
+
+p {
+  color: $colorwhite;
+  margin-top: 1rem;
+}
+
+img {
+  object-fit: cover;
+}
+
+.img-fluid {
+  border-radius: 10px;
+}
+
+img:hover {
+  cursor: pointer;
+  transform: scale(0.95);
+  transition: all 0.1s;
+}
+
+.btn-primary {
+  color: $colorwhite;
+  border: 2px solid $colorwhite;
+  background-color: $colorbeige;
+}
+
+.btn-primary:hover {
+  color: $colorgreen;
+  background-color: $colorwhite;
+  border-color: $colorbeige;
+}
+
+.btnbtn-outline-success {
+  border-radius: 8px;
+  color: $colorgreen;
+  background-color: $colorgreen;
+}

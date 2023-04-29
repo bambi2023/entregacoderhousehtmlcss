@@ -1,0 +1,18 @@
+$colorgreen: #5e503f;
+.card {
+  display: flex;
+  flex-direction: row;
+  background-color: $colorgreen;
+
+  .floral {
+    margin-bottom: 3rem;
+  }
+
+  .clasicos {
+    margin-bottom: 3rem;
+  }
+
+  .delmar {
+    margin-bottom: 3rem;
+  }
+}

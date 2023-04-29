@@ -1,0 +1,241 @@
+main.responsive {
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+  min-height: 450px;
+  text-align: center;
+}
+main.responsive .main__content {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  justify-content: center;
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+main.responsive .main__text {
+  max-width: 80%;
+}
+
+.hero-principal {
+  align-items: center;
+  justify-content: center;
+}
+.hero-principal .hero-video {
+  margin-bottom: 2rem;
+  width: 426px;
+  height: 240px;
+}
+.hero-principal .galeria__nosotros,
+.hero-principal h2 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #22333b;
+  font-family: "Poppins", sans-serif;
+}
+
+h1 {
+  padding: 2rem;
+  font-size: 2.5rem;
+  color: #eae0d5;
+}
+
+h2,
+h3,
+h4,
+h5 {
+  color: #eae0d5;
+}
+
+p {
+  color: #eae0d5;
+  margin-top: 1rem;
+}
+
+img {
+  object-fit: cover;
+}
+
+.img-fluid {
+  border-radius: 10px;
+}
+
+img:hover {
+  cursor: pointer;
+  transform: scale(0.95);
+  transition: all 0.1s;
+}
+
+.btn-primary {
+  color: #eae0d5;
+  border: 2px solid #eae0d5;
+  background-color: #c6ac8f;
+}
+
+.btn-primary:hover {
+  color: #5e503f;
+  background-color: #eae0d5;
+  border-color: #c6ac8f;
+}
+
+.btnbtn-outline-success {
+  border-radius: 8px;
+  color: #5e503f;
+  background-color: #5e503f;
+}
+
+@media screen and (max-width: 767px) {
+  .navbar-brand {
+    display: flex;
+    flex-direction: column;
+    /*  justify-content: center;
+        align-items: center; */
+  }
+}
+@media screen and (max-width: 767px) {
+  .main__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 767px) {
+  .nav-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    color: #5e503f;
+  }
+}
+@media screen and (min-width: 767px) {
+  .nav-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    color: #5e503f;
+  }
+}
+@media screen and (max-width: 767px) {
+  .footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 767px) {
+  .footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+}
+footer {
+  height: 110px;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background-color: #eae0d5;
+}
+footer h6 {
+  color: #22333b;
+  font-size: 12px;
+}
+footer .iconos-buscanos {
+  margin-top: 1rem;
+}
+footer path:hover {
+  color: #c6ac8f;
+  transition: all 0.1s ease-in;
+  font-size: 10px;
+}
+footer .iconos-redes-sociales svg {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1px;
+  margin: 10px;
+  border: 2px solid #22333b;
+  border-radius: 50%;
+  transition: all 0.2s ease-in;
+  cursor: pointer;
+}
+footer .iconos-redes-sociales svg {
+  font-size: 10px;
+  transition: all 0.2s;
+  color: #22333b;
+}
+
+.navbar {
+  padding: 2rem;
+  background-color: #eae0d5;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.navbar-collapse {
+  margin-left: 100px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-item {
+  margin-left: 15px;
+  align-items: center;
+  justify-content: space-between;
+  color: #5e503f;
+  transition: all 0.2s ease-in;
+  cursor: pointer;
+}
+
+.card {
+  display: flex;
+  flex-direction: row;
+  background-color: #5e503f;
+}
+.card .floral {
+  margin-bottom: 3rem;
+}
+.card .clasicos {
+  margin-bottom: 3rem;
+}
+.card .delmar {
+  margin-bottom: 3rem;
+}
+
+/* FORMULARIO CONTACTO */
+form .main__contact {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+form label {
+  color: #eae0d5;
+}
+form input,
+form select,
+form textarea {
+  color: #22333b;
+  border-radius: 4px;
+  padding: 4px;
+  background-color: #eae0d5;
+}
+
+/*# sourceMappingURL=style.css.map */
