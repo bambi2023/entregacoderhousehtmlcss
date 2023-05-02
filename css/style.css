@@ -125,6 +125,7 @@ img:hover {
     align-items: center;
     justify-content: space-between;
     color: #5e503f;
+    /*  @include mobile; */
   }
 }
 @media screen and (max-width: 767px) {
@@ -206,22 +207,27 @@ footer .iconos-redes-sociales svg {
 }
 
 .card {
+  /* @include card; */
   display: flex;
   flex-direction: row;
   background-color: #5e503f;
 }
 .card .floral {
+  /* @include card; */
   margin-bottom: 3rem;
 }
 .card .clasicos {
+  /* @include card; */
   margin-bottom: 3rem;
 }
 .card .delmar {
+  /* @include card; */
   margin-bottom: 3rem;
 }
 
 /* FORMULARIO CONTACTO */
 form .main__contact {
+  /* @include contactform; */
   justify-content: center;
   align-items: center;
   text-align: center;

@@ -1,3 +1,5 @@
+$colorgreen: #5e503f;
+
 @media screen and (max-width: 767px) {
   .navbar-brand {
     display: flex;
@@ -22,7 +24,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    color: #5e503f;
+    color: $colorgreen;
   }
 }
 
@@ -32,7 +34,9 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    color: #5e503f;
+    color: $colorgreen;
+
+    /*  @include mobile; */
   }
 }
 

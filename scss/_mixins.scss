@@ -1,0 +1,17 @@
+@mixin contactform {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+@mixin card {
+  display: flex;
+  flex-direction: row;
+  background-color: $colorgreen;
+}
+
+@mixin mobile {
+  @media (min-with: $mobile) {
+    flex-direction: row;
+  }
+}
