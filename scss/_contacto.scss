@@ -6,10 +6,7 @@ $back-form: $colorwhite;
 
 form {
   .main__contact {
-    /* @include contactform; */
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+    @include contactform;
   }
 
   label {

@@ -21,14 +21,20 @@ h1 {
 }
 h2,
 h3,
-h4,
-h5 {
+h4 {
   color: $colorwhite;
 }
 
 p {
   color: $colorwhite;
   margin-top: 1rem;
+}
+
+h5 {
+  background-color: $colorwhite;
+  opacity: 60%;
+  font-size: 16px;
+  color: $colorblue;
 }
 
 img {
@@ -52,9 +58,10 @@ img:hover {
 }
 
 .btn-primary:hover {
-  color: $colorgreen;
+  color: $colorwhite;
   background-color: $colorwhite;
-  border-color: $colorbeige;
+  border-color: $colorwhite;
+  background-image: linear-gradient($colorgreen, $colorbeige);
 }
 
 .btnbtn-outline-success {

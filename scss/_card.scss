@@ -1,23 +1,24 @@
 $colorgreen: #5e503f;
 
 .card {
-  /* @include card; */
-  display: flex;
+  @include card;
+  /*display: flex;
   flex-direction: row;
-  background-color: $colorgreen;
+  background-color: $colorgreen; */
+  background-image: linear-gradient($colorgreen 60%, $colorbeige);
 
   .floral {
-    /* @include card; */
+    @include card;
     margin-bottom: 3rem;
   }
 
   .clasicos {
-    /* @include card; */
+    @include card;
     margin-bottom: 3rem;
   }
 
   .delmar {
-    /* @include card; */
+    @include card;
     margin-bottom: 3rem;
   }
 }

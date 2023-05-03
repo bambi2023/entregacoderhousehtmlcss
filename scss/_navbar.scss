@@ -2,26 +2,27 @@ $colorgreen: #5e503f;
 $colorwhite: #eae0d5;
 
 .navbar {
+  @include navbar;
   padding: 2rem;
   background-color: $colorwhite;
-  display: flex;
-  flex-direction: row;
   justify-content: center;
-  align-items: center;
-  text-align: center;
-}
 
-.navbar-collapse {
-  margin-left: 100px;
+  /*  display: flex;
+  flex-direction: row;
   align-items: center;
-  justify-content: space-between;
-}
+  text-align: center; */
+  .navbar-collapse {
+    margin-left: 100px;
+    /*  align-items: center; */
+    justify-content: space-between;
+  }
 
-.nav-item {
-  margin-left: 15px;
-  align-items: center;
-  justify-content: space-between;
-  color: $colorgreen;
-  transition: all 0.2s ease-in;
-  cursor: pointer;
+  .nav-item {
+    margin-left: 15px;
+    /* align-items: center; */
+    justify-content: space-between;
+    color: $colorgreen;
+    transition: all 0.2s ease-in;
+    cursor: pointer;
+  }
 }

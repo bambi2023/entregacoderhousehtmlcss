@@ -1,0 +1,43 @@
+#animation {
+  color: $colorbeige;
+}
+#animation:after {
+  content: "";
+  animation: animation 2s linear infinite;
+}
+
+@keyframes animation {
+  0% {
+    content: "xs";
+  }
+  10% {
+    content: "xs";
+  }
+  20% {
+    content: "xs";
+  }
+  30% {
+    content: "as";
+  }
+  40% {
+    content: "as";
+  }
+  50% {
+    content: "as";
+  }
+  60% {
+    content: "os";
+  }
+  70% {
+    content: "os";
+  }
+  80% {
+    content: "es";
+  }
+  90% {
+    content: "es";
+  }
+  100% {
+    content: "es";
+  }
+}

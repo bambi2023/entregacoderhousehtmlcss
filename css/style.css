@@ -51,14 +51,20 @@ h1 {
 
 h2,
 h3,
-h4,
-h5 {
+h4 {
   color: #eae0d5;
 }
 
 p {
   color: #eae0d5;
   margin-top: 1rem;
+}
+
+h5 {
+  background-color: #eae0d5;
+  opacity: 60%;
+  font-size: 16px;
+  color: #22333b;
 }
 
 img {
@@ -82,9 +88,10 @@ img:hover {
 }
 
 .btn-primary:hover {
-  color: #5e503f;
+  color: #eae0d5;
   background-color: #eae0d5;
-  border-color: #c6ac8f;
+  border-color: #eae0d5;
+  background-image: linear-gradient(#5e503f, #c6ac8f);
 }
 
 .btnbtn-outline-success {
@@ -105,8 +112,8 @@ img:hover {
   .main__content {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
   }
 }
 @media screen and (max-width: 767px) {
@@ -125,7 +132,6 @@ img:hover {
     align-items: center;
     justify-content: space-between;
     color: #5e503f;
-    /*  @include mobile; */
   }
 }
 @media screen and (max-width: 767px) {
@@ -165,15 +171,15 @@ footer path:hover {
 footer .iconos-redes-sociales svg {
   width: 40px;
   height: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   padding: 1px;
   margin: 10px;
   border: 2px solid #22333b;
   border-radius: 50%;
   transition: all 0.2s ease-in;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 footer .iconos-redes-sociales svg {
   font-size: 10px;
@@ -182,24 +188,26 @@ footer .iconos-redes-sociales svg {
 }
 
 .navbar {
-  padding: 2rem;
-  background-color: #eae0d5;
   display: flex;
   flex-direction: row;
-  justify-content: center;
   align-items: center;
   text-align: center;
-}
-
-.navbar-collapse {
-  margin-left: 100px;
+  padding: 2rem;
+  background-color: #eae0d5;
+  justify-content: center;
+  /*  display: flex;
+  flex-direction: row;
   align-items: center;
+  text-align: center; */
+}
+.navbar .navbar-collapse {
+  margin-left: 100px;
+  /*  align-items: center; */
   justify-content: space-between;
 }
-
-.nav-item {
+.navbar .nav-item {
   margin-left: 15px;
-  align-items: center;
+  /* align-items: center; */
   justify-content: space-between;
   color: #5e503f;
   transition: all 0.2s ease-in;
@@ -207,27 +215,35 @@ footer .iconos-redes-sociales svg {
 }
 
 .card {
-  /* @include card; */
   display: flex;
   flex-direction: row;
   background-color: #5e503f;
+  /*display: flex;
+  flex-direction: row;
+  background-color: $colorgreen; */
+  background-image: linear-gradient(#5e503f 60%, #c6ac8f);
 }
 .card .floral {
-  /* @include card; */
+  display: flex;
+  flex-direction: row;
+  background-color: #5e503f;
   margin-bottom: 3rem;
 }
 .card .clasicos {
-  /* @include card; */
+  display: flex;
+  flex-direction: row;
+  background-color: #5e503f;
   margin-bottom: 3rem;
 }
 .card .delmar {
-  /* @include card; */
+  display: flex;
+  flex-direction: row;
+  background-color: #5e503f;
   margin-bottom: 3rem;
 }
 
 /* FORMULARIO CONTACTO */
 form .main__contact {
-  /* @include contactform; */
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -242,6 +258,51 @@ form textarea {
   border-radius: 4px;
   padding: 4px;
   background-color: #eae0d5;
+}
+
+#animation {
+  color: #c6ac8f;
+}
+
+#animation:after {
+  content: "";
+  animation: animation 2s linear infinite;
+}
+
+@keyframes animation {
+  0% {
+    content: "xs";
+  }
+  10% {
+    content: "xs";
+  }
+  20% {
+    content: "xs";
+  }
+  30% {
+    content: "as";
+  }
+  40% {
+    content: "as";
+  }
+  50% {
+    content: "as";
+  }
+  60% {
+    content: "os";
+  }
+  70% {
+    content: "os";
+  }
+  80% {
+    content: "es";
+  }
+  90% {
+    content: "es";
+  }
+  100% {
+    content: "es";
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

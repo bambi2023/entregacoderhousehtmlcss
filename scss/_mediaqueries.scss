@@ -11,18 +11,14 @@ $colorgreen: #5e503f;
 
 @media screen and (max-width: 767px) {
   .main__content {
-    display: flex;
-    flex-direction: column;
+    @include mediaquerie;
     justify-content: center;
-    align-items: center;
   }
 }
 
 @media screen and (max-width: 767px) {
   .nav-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include mediaquerie;
     justify-content: space-between;
     color: $colorgreen;
   }
@@ -35,8 +31,6 @@ $colorgreen: #5e503f;
     align-items: center;
     justify-content: space-between;
     color: $colorgreen;
-
-    /*  @include mobile; */
   }
 }
 

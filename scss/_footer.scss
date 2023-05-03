@@ -26,15 +26,16 @@ footer {
   .iconos-redes-sociales svg {
     width: 40px;
     height: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     padding: 1px;
     margin: 10px;
     border: 2px solid $colorblue;
     border-radius: 50%;
     transition: all 0.2s ease-in;
     cursor: pointer;
+    @include footer
+      /* display: flex;
+    align-items: center;
+    justify-content: center; */;
   }
 
   .iconos-redes-sociales svg {
