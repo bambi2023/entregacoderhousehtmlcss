@@ -1,5 +1,3 @@
-$colorgreen: #5e503f;
-
 @media screen and (max-width: 767px) {
   .navbar-brand {
     display: flex;
@@ -20,7 +18,6 @@ $colorgreen: #5e503f;
   .nav-item {
     @include mediaquerie;
     justify-content: space-between;
-    color: $colorgreen;
   }
 }
 

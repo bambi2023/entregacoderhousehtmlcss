@@ -1,9 +1,4 @@
 /* FORMULARIO CONTACTO */
-$colorwhite: #eae0d5;
-$colorblue: #22333b;
-
-$back-form: $colorwhite;
-
 form {
   .main__contact {
     @include contactform;
