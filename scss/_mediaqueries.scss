@@ -27,7 +27,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    color: $colorgreen;
+    color: #c6ac8f;
   }
 }
 
@@ -68,5 +68,23 @@
     margin-bottom: 2rem;
     width: 176px;
     height: 144px;
+  }
+}
+
+/* media card */
+
+@media screen and (max-width: 767px) {
+  .card {
+    display: block;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+@media screen and (min-width: 767px) {
+  .card {
+    display: block;
+    align-items: center;
+    justify-content: space-between;
+    color: #c6ac8f;
   }
 }
