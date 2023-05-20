@@ -75,14 +75,16 @@
 
 @media screen and (max-width: 767px) {
   .card {
-    display: block;
+    display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
   }
 }
 @media screen and (min-width: 767px) {
   .card {
-    display: block;
+    display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
     color: #c6ac8f;
