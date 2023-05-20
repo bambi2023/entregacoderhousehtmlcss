@@ -153,41 +153,52 @@ img:hover {
   .hero-video {
     display: block;
     margin-bottom: 2rem;
-    padding-left: 5rem;
-    padding-right: 5rem;
-    width: 176px;
-    height: 144px;
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
 }
 @media screen and (max-width: 767px) {
   .hero-video {
-    display: flex;
-    flex-wrap: wrap;
-    padding-left: 5rem;
-    padding-right: 5rem;
+    display: block;
+    padding-left: 2rem;
+    padding-right: 2rem;
     margin-bottom: 2rem;
-    width: 176px;
-    height: 144px;
   }
-
-  /* media card */
-
-  @media screen and (max-width: 767px) {
-    .card {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: space-between;
-    }
+}
+/* media card */
+@media screen and (max-width: 767px) {
+  .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
   }
-  @media screen and (min-width: 767px) {
-    .card {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: space-between;
-      color: #c6ac8f;
-    }
+}
+@media screen and (min-width: 767px) {
+  .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    color: #c6ac8f;
+  }
+}
+/* @media screen and (min-width: 767px) {
+  .contact-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    color: #c6ac8f;
+  }
+} */
+/* mq contactform */
+@media screen and (max-width: 767px) {
+  .contact-box {
+    grid-template-columns: 1fr;
+  }
+  .left {
+    height: 200px;
   }
 }
 footer {
@@ -283,23 +294,144 @@ footer .iconos-redes-sociales svg {
 }
 
 /* FORMULARIO CONTACTO */
-form .main__contact {
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 100px;
+}
+
+.container:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: url("..") no-repeat center;
+  background-size: cover;
+  filter: blur(50px);
+  z-index: -1;
+}
+
+.contact-box {
+  max-width: 850px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   justify-content: center;
   align-items: center;
   text-align: center;
+  background-color: #eae0d5;
+  box-shadow: #0a0908;
 }
-form label {
-  color: #eae0d5;
+
+.left {
+  background: url("../imagenes/carrusel6.jpg") no-repeat center;
+  background-size: cover;
+  height: 80%;
+  width: 80%;
+  margin-left: 15%;
+  object-fit: cover;
+  border-radius: 10px;
 }
-form input,
-form select,
-form textarea {
+
+.right {
+  padding: 25px 40px;
+}
+
+h2 {
+  position: relative;
+  padding: 0 0 10px;
+  margin-bottom: 10px;
   color: #22333b;
-  border-radius: 4px;
-  padding: 4px;
+}
+
+h2:after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  height: 4px;
+  width: 50px;
+  border-radius: 2px;
+  background-color: #c6ac8f;
+}
+
+.field {
+  width: 100%;
+  border: 2px solid #c6ac8f;
+  outline: none;
+  background-color: #eae0d5;
+  padding: 0.5rem 1rem;
+  font-size: 1.1rem;
+  color: #22333b;
+  margin-bottom: 22px;
+  transition: 0.3s;
+}
+
+.field:hover {
+  background-color: #c6ac8f;
+}
+
+textarea {
+  min-height: 150px;
+}
+
+.btn {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  background-color: #c6ac8f;
+  color: #eae0d5;
+  font-size: 1.1rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: #c6ac8f;
+}
+
+.field:focus {
+  border: 2px solid #22333b;
   background-color: #eae0d5;
 }
 
+/* form {
+  .main__contact {
+    @include contactform;
+  }
+
+  label {
+    color: $colorwhite;
+  }
+  input,
+  select,
+  textarea {
+    color: $colorblue;
+    border-radius: 4px;
+    padding: 4px;
+    background-color: $colorwhite;
+  }
+}
+ */
 #animation {
   color: #c6ac8f;
 }

@@ -53,21 +53,17 @@
   .hero-video {
     display: block;
     margin-bottom: 2rem;
-    padding-left: 5rem;
-    padding-right: 5rem;
-    width: 176px;
-    height: 144px;
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
 }
 
 @media screen and (max-width: 767px) {
   .hero-video {
     display: block;
-    padding-left: 5rem;
-    padding-right: 5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
     margin-bottom: 2rem;
-    width: 176px;
-    height: 144px;
   }
 }
 
@@ -88,5 +84,26 @@
     align-items: center;
     justify-content: space-between;
     color: #c6ac8f;
+  }
+}
+
+/* @media screen and (min-width: 767px) {
+  .contact-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    color: #c6ac8f;
+  }
+} */
+
+/* mq contactform */
+
+@media screen and (max-width: 767px) {
+  .contact-box {
+    grid-template-columns: 1fr;
+  }
+  .left {
+    height: 200px;
   }
 }
