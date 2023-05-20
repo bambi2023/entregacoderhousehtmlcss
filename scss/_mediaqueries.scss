@@ -51,12 +51,16 @@
 
 @media screen and (min-width: 767px) {
   .hero-video {
-    display: none;
+    margin-bottom: 2rem;
+    width: 176px;
+    height: 144px;
   }
 }
 
 @media screen and (max-width: 767px) {
   .hero-video {
-    display: none;
+    margin-bottom: 2rem;
+    width: 176px;
+    height: 144px;
   }
 }
